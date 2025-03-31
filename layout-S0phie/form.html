@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/normalize.css">
+    <link rel="stylesheet" href="static/styles/mycss.css">
+    <link rel="stylesheet" href="static/styles/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="index.html" ><img src="static/images/mda_nav.svg" alt="photo" class="logo"></a>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="grid.html">HOME</a></li>
+                        <li><a href="index.html">SERVICES</a></li>
+                        <li><a href="index.html">AUTH</a></li>
+                    </ul>
+                </nav>
+                <ul class="social-links">
+                    <li><a href="https://t.me"><img src="static/images/logotg.png" alt="telegram"></a></li>
+                    <li><a href="https://t.me"><img src="static/images/logowapp.png" alt="telegram"></a></li>
+                </ul>
+                <nav class="button_navbar">
+                    <button class="button_nav"><img src="static/images/point.svg" alt="phto"></button>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="form-page" method="POST" name="contact">
+                <fieldset class="personal_info">
+                    <legend>Personal information</legend>
+                    <label class="label-input">
+                        <span>Name</span>
+                        <input required type="text" name="name" placeholder="Name">
+                    </label>
+                    <label class="label-input">
+                        <span>Birth date</span>
+                        <input required type="date" name="name" placeholder="Birth date">
+                    </label>
+                    <label class="label-input">
+                        <span>Sex</span>
+                        <!-- <input type="radio" name="name" placeholder="Sex" value="1" class="radio-select1">
+                        <input type="radio" name="name" placeholder="Sex" value="2" class="radio-select2">
+                        <label for="radio-select1">Male</label>
+                        <label for="radio-select2">Female</label> -->
+
+                        <select>
+                            <option value selected>Choose...</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </label>
+                    <label class="label-input">
+                        <span>Password</span>
+                        <input required type="password" name="name" placeholder="Password">
+                    </label>
+                    
+                </fieldset>
+
+                <fieldset class="contact_info">
+                    <legend>Contacts</legend>
+
+                    <label class="label-input">
+                        <span>Email</span>
+                        <input required type="" name="name" placeholder="Email">
+                    </label>
+                    <label class="label-input">
+                        <span>Telephone</span>
+                        <input type="tel" name="name" placeholder="Telephone">
+                    </label>
+                    <label class="label-input">
+                        <span>Communication interval</span>
+                        <ul class="form-label-ul">
+                            <li class="form-label-li">
+                                <label class="form-label-input">
+                                    <input type="checkbox" name="name" placeholder="Name" value="Morning">
+                                    <span>Morning</span>
+                                </label>
+                            </li>
+                            <li class="form-label-li">
+                                <label class="form-label-input">
+                                    <input type="checkbox" name="name" placeholder="Name" value="Day">
+                                    <span>Day</span>
+                                </label>
+                            </li>
+                            <li class="form-label-li">
+                                <label class="form-label-input">
+                                    <input type="checkbox" name="name" placeholder="Name" value="Evening">
+                                    <span>Evening</span>
+                                </label>
+                            </li>
+                            <li class="form-label-li">
+                                <label class="form-label-input">
+                                    <input  type="checkbox" name="name" placeholder="Name" value="Night">
+                                    <span>Night</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                    </label>
+                </fieldset>
+
+                <div class="form_buttons">
+                    <button type="submit" class="button-form">
+                        <span>Send</span>
+                    </button>
+                    <button type="reset" class="button-form">
+                        <span>Clear all</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+        <div class="contacts">
+            <div class="contacts-desktop">
+                <a href="index.html"><img src="static/images/mda_shipping.svg" alt="mda_shipping"></a>
+                <nav class="footer-menu">
+                    <ul class="footer_list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_messanger">
+                    <a href="index.html"><img src="static/images/whatsapp.svg" alt="whatsapp" class="whatsapp"></a>
+                    <a href="index.html"><img src="static/images/telegram.svg" alt="telegram" class="telegram"></a>
+                </div>
+                <div class="footer-contacts">
+                    <ul class="footer_contacts">
+                        <li><a href="#">info@cargo.us</a></li>
+                        <li><a href="#">+1 912 000 000</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rights">Copyright 2024 Cargo, All Rights reserved.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
